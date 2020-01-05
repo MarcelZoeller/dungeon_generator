@@ -38,33 +38,25 @@ public class Generator : MonoBehaviour
     {
         // Generate start Room
         CreateRoom();
+        selectedDirection = (Direction)Random.Range(0, 4);
+        MoveDoorSpawner();
+        CreateDoor();
+        MoveRoomSpawner();
         SetDoorSpawnerToRoomSpawner();
 
         for (int i = 0; i < roomAmount; i++) 
-        {       
-            // Select Direction
+        {
+            CreateRoom();
+
             selectedDirection = (Direction)Random.Range(0, 4);
-            
-
-
-
-
-
-            //Create Door
             MoveDoorSpawner();
             CreateDoor();
-            //CreateRoom
             MoveRoomSpawner();
-            if (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom))
+            SetDoorSpawnerToRoomSpawner();
+
+            while (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom))
             {
-                //room found
-                i--;
-            }
-            else
-            {
-                //no room
-                CreateRoom();
-                SetDoorSpawnerToRoomSpawner();
+                MoveRoomSpawner();
             }
 
 
