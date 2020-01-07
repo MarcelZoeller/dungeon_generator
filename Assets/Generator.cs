@@ -33,10 +33,13 @@ public class Generator : MonoBehaviour
     public List<GameObject> roomList = new List<GameObject>();
     public List<GameObject> roomWithNoChildren = new List<GameObject>();
 
+    public int keyLevel;
 
     public GameObject startRoom;
     public GameObject bossRoom;
     public GameObject lastRoom;
+
+    public List<GameObject> pathToStartList = new List<GameObject>();
 
     /* backtracking_change change you have to go back to previous key levels to open 
      * 
@@ -65,7 +68,7 @@ public class Generator : MonoBehaviour
         //generate tree of rooms
         {
 
-            int keyLevel = 0;
+            keyLevel = 0;
             int keyLevelCounter = 5;
 
             while (roomList.Count != 30)
@@ -226,8 +229,31 @@ public class Generator : MonoBehaviour
 
         int randomRoom = Random.Range(1, roomWithNoChildren.Count);
         GameObject randomRoomObj = roomWithNoChildren[randomRoom];
+
+        lastRoom = randomRoomObj;
+        bossRoom = randomRoomObj.GetComponent<Room>().parent.gameObject;
+
         randomRoomObj.GetComponent<SpriteRenderer>().color = new Color(1f, 0.1f, 0.1f);
         randomRoomObj.GetComponent<Room>().parent.gameObject.GetComponent<SpriteRenderer>().color = new Color(.7f, 0.1f, 0.1f);
+
+
+        lastRoom.gameObject.GetComponent<Room>().keyLevel = keyLevel + 1;
+        bossRoom.gameObject.GetComponent<Room>().keyLevel = keyLevel + 1;
+        lastRoom.gameObject.GetComponent<Room>().UpdateMyKeyLevel(keyLevel+1);
+        bossRoom.gameObject.GetComponent<Room>().UpdateMyKeyLevel(keyLevel + 1);
+
+
+        
+
+        GameObject roomChecker = bossRoom;
+        GameObject parentToCheck;
+
+        while(roomChecker != startRoom)
+        {
+            parentToCheck = roomChecker.gameObject.GetComponent<Room>().parent;
+            pathToStartList.Add(parentToCheck);
+            roomChecker = parentToCheck;
+        }
 
 
         // Generate start Room
