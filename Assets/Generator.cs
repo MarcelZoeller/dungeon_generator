@@ -8,17 +8,14 @@ public class Generator : MonoBehaviour
     [SerializeField] GameObject roomObject;
     [SerializeField] GameObject doorObject;
 
-
-
     [Header("Colors")]
     public Color startColor;
     public Color endColor;
 
-    public int distanceToEnd;
+    //public int distanceToEnd;
 
     public int roomAmount = 10;
 
-    public Transform generatorPoint;
     public Transform roomSpawner;
     public Transform doorSpawner;
 
@@ -33,43 +30,117 @@ public class Generator : MonoBehaviour
     private int roomCounter = 0;
 
 
+    public List<GameObject> roomList = new List<GameObject>();
+
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
-        // Generate start Room
-        CreateRoom();
-        
-        for (int i = 0; i < roomAmount; i++) 
+
+        // 1. Generate start Room
+        var roomID = Instantiate(roomObject, roomSpawner.position, roomSpawner.rotation);
+        roomList.Add(roomID);
+
+        // 2.1. Pick Random Room
+        //pick random room
+        int pickedRoomID = Random.Range(0, roomList.Count);
+        GameObject pickedRoomObj = roomList[pickedRoomID];
+
+        // check if room has empty spaces
+
+
+        //reset list
+        pickedRoomObj.GetComponent<Room>().freeSpaces.Clear();
+        //check up 
+        roomSpawner.position = pickedRoomObj.transform.position;
+        roomSpawner.position += new Vector3(0f, 1f, 0f);
+         if (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom) == false)
+         {
+            
+            pickedRoomObj.GetComponent<Room>().freeSpaces.Add(1);
+         }
+
+        //check down
+        roomSpawner.position = pickedRoomObj.transform.position;
+        roomSpawner.position += new Vector3(0f, -1f, 0f);
+        if (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom) == false)
         {
-            var startPos = roomSpawner.position;
+            pickedRoomObj.GetComponent<Room>().freeSpaces.Add(2);
+        }
 
+        //check right
+        roomSpawner.position = pickedRoomObj.transform.position;
+        roomSpawner.position += new Vector3(1f, 0f, 0f);
+        if (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom) == false)
+        {
+            pickedRoomObj.GetComponent<Room>().freeSpaces.Add(3);
+        }
 
-            selectedDirection = (Direction)Random.Range(0, 4);
-            MoveRoomSpawner();
+        //check left
+        roomSpawner.position = pickedRoomObj.transform.position;
+        roomSpawner.position += new Vector3(1f, 0f, 0f);
+        if (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom) == true)
+        {
+            pickedRoomObj.GetComponent<Room>().freeSpaces.Add(4);
+        }
+
+        
+
+        if (pickedRoomObj.GetComponent<Room>().freeSpaces.Count > 0) {
+
+            var pickedDir = Random.Range(0, pickedRoomObj.GetComponent<Room>().freeSpaces.Count - 1);
             
 
-            if (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom))
-            {
-                roomSpawner.position = startPos;
-                i--;
-            }
-            else
-            {
-                MoveDoorSpawner();
-                CreateDoor();
-                SetDoorSpawnerToRoomSpawner();
-
-                CreateRoom();
-
-            }
-
-
-
+            // switch room dir
+            
+            
+            //room has free spaces
+            roomID = Instantiate(roomObject, roomSpawner.position, roomSpawner.rotation);
+            roomList.Add(roomID);
 
 
         }
 
-        
+
+        // Generate start Room
+        //CreateRoom();
+
+
+            //roomID.Add()
+            /*
+            for (int i = 0; i < roomAmount; i++) 
+            {
+                var startPos = roomSpawner.position;
+                int children = 2; //Random.Range(1, 3);
+
+
+                    selectedDirection = (Direction)Random.Range(0, 4);
+                    MoveRoomSpawner();
+                    if (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom))
+                    {
+                        roomSpawner.position = startPos;
+                        i--;
+                    }
+                    else
+                    {
+                        //Create Room
+                        MoveDoorSpawner();
+                        CreateDoor();
+                        SetDoorSpawnerToRoomSpawner();
+                        CreateRoom();
+
+                    }
+
+
+
+
+
+
+            }
+            */
+
     }
 
     private void SetDoorSpawnerToRoomSpawner()
