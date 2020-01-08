@@ -75,5 +75,19 @@ public class Room : MonoBehaviour
 
 
     }
+
+    public bool IsMyChild(GameObject childToCheck)
+    {
+        for (int i = 0; children.Count > 0; i++)
+        {
+            if (children[i]  == childToCheck)
+            {
+                return true;
+                
+            }
+        }
+
+        return true;
+    }
 }
 

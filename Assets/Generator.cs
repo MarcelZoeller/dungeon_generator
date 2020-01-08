@@ -14,7 +14,8 @@ public class Generator : MonoBehaviour
 
     //public int distanceToEnd;
 
-    public int roomAmount = 10;
+    [SerializeField] int roomAmount = 30;
+    [SerializeField] int keyLevelCounter = 5;
 
     public Transform roomSpawner;
     //public Transform doorSpawner;
@@ -69,9 +70,9 @@ public class Generator : MonoBehaviour
         {
 
             keyLevel = 0;
-            int keyLevelCounter = 5;
+            
 
-            while (roomList.Count != 30)
+            while (roomList.Count != roomAmount)
             {
 
                 //pick random room
@@ -191,6 +192,7 @@ public class Generator : MonoBehaviour
                     roomID.gameObject.name = "Room " + roomList.Count.ToString();
                     pickedRoomObj.gameObject.GetComponent<Room>().AddMyChild(roomID);
                     roomList.Add(roomID);
+                    roomID.gameObject.GetComponent<Room>().keyLevel = keyLevel;
                     roomID.gameObject.GetComponent<Room>().UpdateMyRoomID(roomList.Count);
                     roomID.gameObject.GetComponent<Room>().UpdateMyKeyLevel(keyLevel);
                     roomID.gameObject.GetComponent<Room>().WhoIsMyParent(pickedRoomObj);
@@ -211,7 +213,7 @@ public class Generator : MonoBehaviour
             {
                 
                 GameObject hisParent = roomList[i].gameObject.GetComponent<Room>().parent;
-                print(hisParent.ToString() + "children" + hisParent.gameObject.GetComponent<Room>().children.Count.ToString());
+                //print(hisParent.ToString() + "children" + hisParent.gameObject.GetComponent<Room>().children.Count.ToString());
                 if (hisParent.gameObject.GetComponent<Room>().children.Count == 1)
                 {
                     
@@ -255,52 +257,47 @@ public class Generator : MonoBehaviour
             roomChecker = parentToCheck;
         }
 
+        pathToStartList.Remove(startRoom);
 
-        // Generate start Room
-        //CreateRoom();
+        int randomSwitchRoomID = Random.Range(0, pathToStartList.Count);
+        //print(randomSwitchRoomID.ToString() +" / " + pathToStartList.Count.ToString());
+
+        GameObject switchBaseRoom = pathToStartList[randomSwitchRoomID];
+        switchBaseRoom.GetComponent<SpriteRenderer>().color = new Color(0.1f, 1f, 0.1f);
 
 
-        //roomID.Add()
-        /*
-        for (int i = 0; i < roomAmount; i++) 
+        
+        List<GameObject> switchPlaceRooms = new List<GameObject>();
+
+        for (int i = 0; roomList.Count > i; i++)
         {
-            var startPos = roomSpawner.position;
-            int children = 2; //Random.Range(1, 3);
-
-
-                selectedDirection = (Direction)Random.Range(0, 4);
-                MoveRoomSpawner();
-                if (Physics2D.OverlapCircle(roomSpawner.position, .2f, whatIsRoom))
-                {
-                    roomSpawner.position = startPos;
-                    i--;
-                }
-                else
-                {
-                    //Create Room
-                    MoveDoorSpawner();
-                    CreateDoor();
-                    SetDoorSpawnerToRoomSpawner();
-                    CreateRoom();
-
-                }
-
-
-
-
-
-
+            if (roomList[i].gameObject.GetComponent<Room>().keyLevel <= switchBaseRoom.gameObject.GetComponent<Room>().keyLevel)
+            {
+                switchPlaceRooms.Add(roomList[i].gameObject);
+            }
+        }
+        /*
+        for(int i = 0; switchPlaceRooms.Count > i; i++)
+        {
+            if (switchPlaceRooms[i].gameObject.GetComponent<Room>().IsMyChild(switchBaseRoom) == true);
+            {
+                switchPlaceRooms.Remove(switchPlaceRooms[i]);
+            }
         }
         */
+        switchPlaceRooms.Remove(startRoom);
+
+        int randomSwitchRoom = Random.Range(0, switchPlaceRooms.Count);
+        GameObject switchPlaceRoom = switchPlaceRooms[randomSwitchRoom];
+
+        switchPlaceRoom.gameObject.GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 1f);
+
+
+
 
     }
 
-    /*
-    private void SetDoorSpawnerToRoomSpawner()
-    {
-        doorSpawner.position = roomSpawner.position;
-    }
-    */
+
 
 
     // Update is called once per frame
@@ -312,27 +309,7 @@ public class Generator : MonoBehaviour
         }
     } //press R to Reload page
 
-    /*
-    public void MoveDoorSpawner()
-    {
-        switch (selectedDirection)
-        {
-            case Direction.up:
-                doorSpawner.position += new Vector3(0f, yOffset/2, 0f);
-                break;
 
-            case Direction.down:
-                doorSpawner.position += new Vector3(0f, -yOffset/2, 0f);
-                break;
-            case Direction.right:
-                doorSpawner.position += new Vector3(xOffset/2, 0f, 0f);
-                break;
-            case Direction.left:
-                doorSpawner.position += new Vector3(-xOffset/2, 0f, 0f);
-                break;
-        }
-    }
-    */
 
     public void MoveRoomSpawner()
     {
@@ -354,11 +331,7 @@ public class Generator : MonoBehaviour
         }
     }
 
-    /*
-    private void CreateDoor()
-    {
-        Instantiate(doorObject, doorSpawner.position, doorSpawner.rotation);
-    }*/
+
 
     private void CreateRoom()
     {

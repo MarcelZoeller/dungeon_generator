@@ -325,12 +325,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2645d1143ea8c6045a4a501d538e4839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
-  children: []
   freeSpaces: 
   freeEdges: []
   idTextChild: {fileID: 6078876466955702185}
   keylevelTextChild: {fileID: 996568367015864956}
+  parent: {fileID: 0}
+  children: []
+  keyLevel: 0
+  RoomId: 0
 --- !u!1 &6078876466955702185
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4563745956767385065
 RectTransform:
   m_ObjectHideFlags: 0

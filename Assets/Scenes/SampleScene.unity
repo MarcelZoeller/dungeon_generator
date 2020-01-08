@@ -238,7 +238,8 @@ MonoBehaviour:
     type: 3}
   startColor: {r: 0, g: 0, b: 0, a: 0}
   endColor: {r: 0, g: 0, b: 0, a: 0}
-  roomAmount: 10
+  roomAmount: 25
+  keyLevelCounter: 2
   roomSpawner: {fileID: 1350757559}
   selectedDirection: 0
   xOffset: 1
@@ -252,6 +253,7 @@ MonoBehaviour:
   startRoom: {fileID: 0}
   bossRoom: {fileID: 0}
   lastRoom: {fileID: 0}
+  pathToStartList: []
 --- !u!4 &703866085
 Transform:
   m_ObjectHideFlags: 0
