@@ -10,8 +10,8 @@ public class Room : MonoBehaviour
 
     public List<int> freeSpaces;
     public List<string> freeEdges;
-    public GameObject idTextChild;
-    public GameObject keylevelTextChild;
+    public GameObject textChild;
+    
     TextMeshPro text;
 
     public GameObject parent;
@@ -20,6 +20,8 @@ public class Room : MonoBehaviour
 
     public int keyLevel;
     public int RoomId;
+
+    public string desciption = "none";
 
 
 
@@ -38,7 +40,9 @@ public class Room : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        text = textChild.gameObject.GetComponent<TextMeshPro>() as TextMeshPro;
+       
+        text.text = desciption + "\nRLvl: "+ keyLevel;
     }
 
     public int ReturnFreeSpacesCount()
@@ -48,7 +52,7 @@ public class Room : MonoBehaviour
 
     public void UpdateMyRoomID(int id)
     {
-        text = idTextChild.gameObject.GetComponent<TextMeshPro>() as TextMeshPro;
+        text = textChild.gameObject.GetComponent<TextMeshPro>() as TextMeshPro;
         text.text = id.ToString();
 
     }
@@ -56,7 +60,7 @@ public class Room : MonoBehaviour
     public void UpdateMyKeyLevel(int keylevel)
     {
 
-        text = keylevelTextChild.gameObject.GetComponent<TextMeshPro>() as TextMeshPro;
+        text = textChild.gameObject.GetComponent<TextMeshPro>() as TextMeshPro;
         text.text = keylevel.ToString();
 
     }
