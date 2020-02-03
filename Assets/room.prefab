@@ -128,7 +128,8 @@ MonoBehaviour:
   children: []
   keyLevel: 0
   RoomId: 0
-  desciption: empty
+  mainBranch: 0
+  desciption: '-'
 --- !u!1 &7275768410056227368
 GameObject:
   m_ObjectHideFlags: 0

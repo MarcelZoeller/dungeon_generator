@@ -20,6 +20,7 @@ public class Room : MonoBehaviour
 
     public int keyLevel;
     public int RoomId;
+    public bool mainBranch = false;
 
     public string desciption = "none";
 
