@@ -421,13 +421,10 @@ public class NewGenerator : MonoBehaviour
             checkThisRoom.freeEdges.Add("left");
         }
         transform.position = startPos;
-
+       
         return checkThisRoom.freeEdges.Count;
 
-        if (checkThisRoom.freeEdges.Count == 0)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        
 
     }
 
