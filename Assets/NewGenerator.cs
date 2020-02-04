@@ -162,7 +162,7 @@ public class NewGenerator : MonoBehaviour
     {
 
         // GENERATE ROOMS BEFORE LOCKED ROOM
-        int spawnRoomCount = UnityEngine.Random.Range(1, 3);  //Set how many rooms to Spawn
+        int spawnRoomCount = UnityEngine.Random.Range(1, 2+1);  //Set how many rooms to Spawn
         for (int i = 0; i < spawnRoomCount; i++)  //Repeat for every Room
         {
             if (nextRoomKeyLocked == true)
@@ -184,10 +184,10 @@ public class NewGenerator : MonoBehaviour
 
 
         // PLACE THE KEY 
-        //RandomRoom();
-        spawnRoomCount = UnityEngine.Random.Range(2, 2); //Set Room Amount
+        spawnRoomCount = UnityEngine.Random.Range(1, 2+1); //Set Room Amount
         for (int i = 0; i < spawnRoomCount; i++)
         {
+            print("I like it:" + i.ToString());
             if (i == 0) //First Room Pick Random Room
             {
                 if (hasKeyItem == true)
@@ -214,6 +214,30 @@ public class NewGenerator : MonoBehaviour
         }
         //INCREASE ROOM LEVEL
         roomLevel++;
+
+
+
+        // GENERATE ROOMS BEFORE LOCKED ROOM
+        spawnRoomCount = UnityEngine.Random.Range(0, 1 + 1);  //Set how many rooms to Spawn
+        for (int i = 0; i < spawnRoomCount; i++)  //Repeat for every Room
+        {
+            if (nextRoomKeyLocked == true)
+            {
+                room = CreateNextRoom(LastMainBranchRoom(), "key");
+                nextRoomKeyLocked = false;
+            }
+            else
+            {
+                room = CreateNextRoom(LastMainBranchRoom(), "noone");
+            }
+
+            room.mainBranch = true;
+        }
+
+        
+
+
+
     }
     private Room LastMainBranchRoom()
     {
@@ -225,8 +249,6 @@ public class NewGenerator : MonoBehaviour
             counter++;
         } while ((checkThisRoom.mainBranch == false));  //check if room is main and has free spaces
         return checkThisRoom;
-
-
     }
     private Room RandomRoom()  //Pick a Room with Free Edges
     {
@@ -234,7 +256,7 @@ public class NewGenerator : MonoBehaviour
         while (foundRoom == false)
         {
             //Pick Random Room incl Start Room 
-            randomRoom = UnityEngine.Random.Range(0, allRoomList.Count - 1);
+            randomRoom = UnityEngine.Random.Range(1, allRoomList.Count - 1);
             //Move Spawner to Room Position
             transform.position = allRoomList[randomRoom].gameObject.transform.position;
 
@@ -263,7 +285,22 @@ public class NewGenerator : MonoBehaviour
         CheckFreeDoors(parentRoom);
 
         //move spawner to doorPos
-        var pickedDir = UnityEngine.Random.Range(0, parentRoom.freeEdges.Count);
+        int pickedDir;
+        if (allRoomList.Count == 1)// First dir is always north
+        {
+            pickedDir = 0;
+        }
+        else
+        {
+            pickedDir = UnityEngine.Random.Range(0, parentRoom.freeEdges.Count);
+        }
+
+        // if there are no free Edges Reload
+        if (parentRoom.freeEdges.Count == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        
         switch (parentRoom.freeEdges[pickedDir])
         {
             case "up":
