@@ -39,28 +39,22 @@ public class NewGenerator : MonoBehaviour
         PlaceStartRoom();
         ExpandMainBranch();
         PlaceMiniBossRoom();
-        
         ExpandMainBranch();
-        
         PlaceKeyItemRoom();
         ExpandMainBranch();
         ExpandMainBranch();
-        
-
         PlaceBossRoom();
-        
-
         //Add Bonus Rooms (locked with Keys, with a Key)
 
 
     }
     private void PlaceStartRoom()
     {
-        var roomID = Instantiate(roomObject, transform.position, transform.rotation);
-        roomID.GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.3f, 1f);
-        roomID.GetComponent<Room>().desciption = "Start";
-        allRoomList.Add(roomID.GetComponent<Room>());
-        roomID.GetComponent<Room>().mainBranch = true;
+        room = Instantiate(roomObject, transform.position, transform.rotation).GetComponent<Room>();
+        room.GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.3f, 1f);
+        room.desciption = "Entrance";
+        room.mainBranch = true;
+        allRoomList.Add(room.GetComponent<Room>());
     }
     private void PlaceMiniBossRoom()
     {
