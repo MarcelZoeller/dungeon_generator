@@ -22,7 +22,14 @@ public class NewGenerator : MonoBehaviour
 
     Room checkThisRoom;
 
-
+    //Switches
+    /*
+     * One OnOff Switch, with Multiplay Trigger and 
+     * 
+     * One Big Lock with Multiple Triggers 
+     * 
+     * 
+     */
 
 
     // Start is called before the first frame update
@@ -38,7 +45,7 @@ public class NewGenerator : MonoBehaviour
         PlaceKeyItemRoom();
         ExpandMainBranch();
         ExpandMainBranch();
-        ExpandMainBranch();
+        
 
         PlaceBossRoom();
         
@@ -86,9 +93,11 @@ public class NewGenerator : MonoBehaviour
         {
             room = CreateNextRoom(LastMainBranchRoom(), "noone");
         }
-        room.desciption = "Key Item";
+        //room.desciption = "Key Item";
+        //room.GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.9f, 0.3f);
+        room.GetComponent<Room>().UpdateSymbol("keyItem");
         room.mainBranch = true;
-        room.GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.9f, 0.3f);
+        
         hasKeyItem = true;
 
     }
@@ -109,14 +118,15 @@ public class NewGenerator : MonoBehaviour
             
 
             //Create BossKey Room   
-            room = CreateNextRoom(LastMainBranchRoom(), "BossKey");
+            room = CreateNextRoom(LastMainBranchRoom(), "BossKey"); //Lock with BossKey
             room.desciption = "Boss";
             room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.1f, 0.1f);
+            
 
-            RandomRoom();
+            roomLevel++;
 
 
-            //Create Boss Room
+            //Create BossKey Room
             if (nextRoomKeyLocked == true)
             {
                 room = CreateNextRoom(allRoomList[randomRoom], "key");
@@ -124,10 +134,11 @@ public class NewGenerator : MonoBehaviour
             }
             else
             {
-                room = CreateNextRoom(allRoomList[randomRoom], "noone");
+                room = CreateNextRoom(allRoomList[randomRoom], "KeyItem");
             }
-            room.desciption = "Boss Key";
-            room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.3f, 0.8f);
+            //room.desciption = "BossKey";
+            room.GetComponent<Room>().UpdateSymbol("bossKey");
+            //room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.3f, 0.8f);
         }
         else
         {
@@ -143,16 +154,19 @@ public class NewGenerator : MonoBehaviour
             {
                 room = CreateNextRoom(LastMainBranchRoom(), "noone");
             }
-            room.desciption = "Boss Key";
-            room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.3f, 0.8f);
+           // room.desciption = "BossKey";
+            //room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.1f, 0.1f);
+            room.GetComponent<Room>().UpdateSymbol("bossKey");
 
-            RandomRoom();
+
+            roomLevel++;
 
 
             //Create Boss Room
-            room = CreateNextRoom(allRoomList[randomRoom], "BossKey");
+            room = CreateNextRoom(allRoomList[randomRoom], "BossKey"); // Lock with BossKey
             room.desciption = "Boss";
             room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.1f, 0.1f);
+            //room.GetComponent<Room>().UpdateSymbol("bossKey");
         }
 
         
@@ -207,8 +221,10 @@ public class NewGenerator : MonoBehaviour
             }
             if (i == spawnRoomCount-1) //Place the Key in Last Room
             {
-                allRoomList[allRoomList.Count - 1].GetComponent<Room>().desciption = "Key";
-                allRoomList[allRoomList.Count - 1].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 0.3f);
+                //allRoomList[allRoomList.Count - 1].GetComponent<Room>().desciption = "Key";
+                //allRoomList[allRoomList.Count - 1].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 0.3f);
+
+                allRoomList[allRoomList.Count - 1].GetComponent<Room>().UpdateSymbol("key");
             }
 
         }
@@ -324,15 +340,18 @@ public class NewGenerator : MonoBehaviour
         var doorID = Instantiate(doorObject, transform.position, transform.rotation);
         if (locked == "key")
         {
-            doorID.GetComponent<SpriteRenderer>().color = new Color(1f, 0.3f, 0.3f);
+            //doorID.GetComponent<SpriteRenderer>().color = new Color(1f, 0.3f, 0.3f);
+            doorID.GetComponent<door>().UpdateSprite("key");
         }
         if(locked == "KeyItem")
         {
-            doorID.GetComponent<SpriteRenderer>().color = new Color(0.3f, 1f, 0.3f);
+            //doorID.GetComponent<SpriteRenderer>().color = new Color(0.3f, 1f, 0.3f);
+            doorID.GetComponent<door>().UpdateSprite("keyItem");
         }
         if (locked == "BossKey")
         {
-            doorID.GetComponent<SpriteRenderer>().color = new Color(1f, 0.3f, 1f);
+            //doorID.GetComponent<SpriteRenderer>().color = new Color(1f, 0.3f, 1f);
+            doorID.GetComponent<door>().UpdateSprite("bossKey");
         }
 
 

@@ -24,6 +24,13 @@ public class Room : MonoBehaviour
 
     public string desciption = "none";
 
+    [SerializeField] GameObject SymbolChild;
+
+    [SerializeField] Sprite open;
+    [SerializeField] Sprite key;
+    [SerializeField] Sprite bossKey;
+    [SerializeField] Sprite keyItem;
+
 
 
     // Start is called before the first frame update
@@ -42,8 +49,8 @@ public class Room : MonoBehaviour
     void Update()
     {
         text = textChild.gameObject.GetComponent<TextMeshPro>() as TextMeshPro;
-       
-        text.text = desciption + "\nRLvl: "+ keyLevel;
+
+        text.text = desciption;// + "\nRLvl: "+ keyLevel;
     }
 
     public int ReturnFreeSpacesCount()
@@ -93,6 +100,26 @@ public class Room : MonoBehaviour
         }
 
         return true;
+    }
+
+
+    public void UpdateSymbol(string symbol)
+    {
+        switch (symbol)
+        {
+            case "open":
+                SymbolChild.GetComponent<SpriteRenderer>().sprite = open;
+                break;
+            case "key":
+                SymbolChild.GetComponent<SpriteRenderer>().sprite = key;
+                break;
+            case "bossKey":
+                SymbolChild.GetComponent<SpriteRenderer>().sprite = bossKey;
+                break;
+            case "keyItem":
+                SymbolChild.GetComponent<SpriteRenderer>().sprite = keyItem;
+                break;
+        }
     }
 }
 
