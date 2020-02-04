@@ -123,7 +123,7 @@ public class NewGenerator : MonoBehaviour
             //Create BossKey Room
             if (nextRoomKeyLocked == true)
             {
-                room = CreateNextRoom(allRoomList[randomRoom], "key");
+                room = CreateNextRoom(LastMainBranchRoom(), "key");
                 nextRoomKeyLocked = false;
             }
             else
@@ -208,7 +208,7 @@ public class NewGenerator : MonoBehaviour
                 }
                 room.GetComponent<SpriteRenderer>().color = new Color(.7f, .7f, 0.7f);
             }
-            else //All over Rooms
+            else //All other Rooms
             {
                 room = CreateNextRoom(allRoomList[allRoomList.Count - 1], "noone");
                 room.GetComponent<SpriteRenderer>().color = new Color(.7f, .7f, 0.7f);
