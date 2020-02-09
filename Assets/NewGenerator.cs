@@ -75,7 +75,7 @@ public class NewGenerator : MonoBehaviour
         if (UnityEngine.Random.Range(0, 100) >= 50)
         {
             //Create BossKey Room   
-            room = CreateNextRoom(LastMainBranchRoom(), "BossKey"); //Lock with BossKey
+            room = CreateNextRoom(LastMainBranchRoom(), "BossKey"); //Lock with BossKey 
             room.GetComponent<Room>().UpdateIcon("boss");
 
             roomLevel++;
