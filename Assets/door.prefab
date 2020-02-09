@@ -70,8 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -8571809820867387182, guid: 872481d18d8adcb4c94c25c7595d9546,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f6f5c23824d8f9479a79ca12e384f7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,6 +94,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   open: {fileID: -8571809820867387182, guid: 872481d18d8adcb4c94c25c7595d9546, type: 3}
-  key: {fileID: 3453978245384926840, guid: 872481d18d8adcb4c94c25c7595d9546, type: 3}
-  bossKey: {fileID: 7853013367509626063, guid: 872481d18d8adcb4c94c25c7595d9546, type: 3}
-  keyItem: {fileID: 5442069520775141291, guid: 872481d18d8adcb4c94c25c7595d9546, type: 3}
+  key: {fileID: -8205508169387972997, guid: e246eadc17788734994ed43ee2abe3f1, type: 3}
+  bossKey: {fileID: 9007670581715827407, guid: e246eadc17788734994ed43ee2abe3f1, type: 3}
+  keyItem: {fileID: 7678402484200052906, guid: e246eadc17788734994ed43ee2abe3f1, type: 3}

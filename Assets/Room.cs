@@ -32,6 +32,17 @@ public class Room : MonoBehaviour
     [SerializeField] Sprite keyItem;
 
 
+    [SerializeField] GameObject iconChild;
+
+    [SerializeField] Sprite iconEntrance;
+    [SerializeField] Sprite iconMiniBoss;
+    [SerializeField] Sprite iconBoss;
+
+    [SerializeField] GameObject mumbersChild;
+
+    [SerializeField] List<Sprite> Mumbers;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +51,7 @@ public class Room : MonoBehaviour
         //idTextChild = gameObject.transform.Find("IdText").gameObject;
         //keylevelTextChild = gameObject.transform.Find("keylevelText").gameObject;
 
-
+        //iconChild.GetComponent<SpriteRenderer>().sprite = null;
 
 
     }
@@ -51,6 +62,9 @@ public class Room : MonoBehaviour
         text = textChild.gameObject.GetComponent<TextMeshPro>() as TextMeshPro;
 
         text.text = desciption;// + "\nRLvl: "+ keyLevel;
+
+        mumbersChild.GetComponent<SpriteRenderer>().sprite = Mumbers[keyLevel];
+        //GetComponent<SpriteRenderer>().sprite = mumb
     }
 
     public int ReturnFreeSpacesCount()
@@ -121,5 +135,25 @@ public class Room : MonoBehaviour
                 break;
         }
     }
+
+    public void UpdateIcon(string icon)
+    {
+        switch (icon)
+        {
+            case "entrance":
+                iconChild.GetComponent<SpriteRenderer>().sprite = iconEntrance;
+                break;
+            case "miniBoss":
+                iconChild.GetComponent<SpriteRenderer>().sprite = iconMiniBoss;
+                break;
+            case "boss":
+                iconChild.GetComponent<SpriteRenderer>().sprite = iconBoss;
+                break;
+ 
+        }
+    }
+
+
+
 }
 

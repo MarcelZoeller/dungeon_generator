@@ -51,71 +51,32 @@ public class NewGenerator : MonoBehaviour
     private void PlaceStartRoom()
     {
         room = Instantiate(roomObject, transform.position, transform.rotation).GetComponent<Room>();
-        room.GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.3f, 1f);
-        room.desciption = "Entrance";
+        room.GetComponent<Room>().UpdateIcon("entrance");
         room.mainBranch = true;
         allRoomList.Add(room.GetComponent<Room>());
     }
     private void PlaceMiniBossRoom()
     {
-                
-        if (nextRoomKeyLocked == true)
-        {
-            room = CreateNextRoom(LastMainBranchRoom(), "key");
-            nextRoomKeyLocked = false;
-        }
-        else
-        {
-            room = CreateNextRoom(LastMainBranchRoom(), "noone");
-        }
-
-
-        room.desciption = "Mini Boss";
+        room = CreateNextMainRoom();
+        room.GetComponent<Room>().UpdateIcon("miniBoss");
         room.mainBranch = true;
-        room.GetComponent<SpriteRenderer>().color = new Color(0.9f, 0.5f, 0.5f);
-
     }
     private void PlaceKeyItemRoom()
     {
-
-        if (nextRoomKeyLocked == true)
-        {
-            room = CreateNextRoom(LastMainBranchRoom(), "key");
-            nextRoomKeyLocked = false;
-        }
-        else
-        {
-            room = CreateNextRoom(LastMainBranchRoom(), "noone");
-        }
-        //room.desciption = "Key Item";
-        //room.GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.9f, 0.3f);
+        room = CreateNextMainRoom();
         room.GetComponent<Room>().UpdateSymbol("keyItem");
-        room.mainBranch = true;
-        
+        //roomLevel++;
         hasKeyItem = true;
-
+        //int keyItemKeyLevel = keyItemKeyLevel; 
     }
     private void PlaceBossRoom()
     {
-        // Boss Key or Boss Room First
-        //randomasd
-        
-            
+        // Randomly decide if place Boss Key or Boss Room first
         if (UnityEngine.Random.Range(0, 100) >= 50)
         {
-            bossRoomBeforeKey = true;
-        }
-        
-        
-        if (bossRoomBeforeKey == true)
-        {
-            
-
             //Create BossKey Room   
             room = CreateNextRoom(LastMainBranchRoom(), "BossKey"); //Lock with BossKey
-            room.desciption = "Boss";
-            room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.1f, 0.1f);
-            
+            room.GetComponent<Room>().UpdateIcon("boss");
 
             roomLevel++;
 
@@ -130,38 +91,24 @@ public class NewGenerator : MonoBehaviour
             {
                 room = CreateNextRoom(allRoomList[randomRoom], "KeyItem");
             }
-            //room.desciption = "BossKey";
+
             room.GetComponent<Room>().UpdateSymbol("bossKey");
-            //room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.3f, 0.8f);
+
         }
         else
-        {
-            
-
-            //Create BossKey Room
-            if (nextRoomKeyLocked == true)
-            {
-                room = CreateNextRoom(LastMainBranchRoom(), "key");
-                nextRoomKeyLocked = false;
-            }
-            else
-            {
-                room = CreateNextRoom(LastMainBranchRoom(), "noone");
-            }
-           // room.desciption = "BossKey";
-            //room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.1f, 0.1f);
+        {   //Create BossKey Room befor Boss            
+            room = CreateNextMainRoom();
             room.GetComponent<Room>().UpdateSymbol("bossKey");
-
 
             roomLevel++;
 
-
             //Create Boss Room
             room = CreateNextRoom(allRoomList[randomRoom], "BossKey"); // Lock with BossKey
-            room.desciption = "Boss";
-            room.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.1f, 0.1f);
-            //room.GetComponent<Room>().UpdateSymbol("bossKey");
+            room.GetComponent<Room>().UpdateIcon("boss");
         }
+        
+        
+
 
         
 
@@ -173,17 +120,7 @@ public class NewGenerator : MonoBehaviour
         int spawnRoomCount = UnityEngine.Random.Range(1, 2+1);  //Set how many rooms to Spawn
         for (int i = 0; i < spawnRoomCount; i++)  //Repeat for every Room
         {
-            if (nextRoomKeyLocked == true)
-            {
-                room = CreateNextRoom(LastMainBranchRoom(), "key");
-                nextRoomKeyLocked = false;
-            }
-            else
-            {
-                room = CreateNextRoom(LastMainBranchRoom(), "noone");
-            }
-
-            room.mainBranch = true;
+            CreateNextMainRoom();
         }
 
         nextRoomKeyLocked = true;
@@ -191,37 +128,42 @@ public class NewGenerator : MonoBehaviour
 
 
 
-        // PLACE THE KEY 
+        // PLACE (Hide) THE KEY 
         spawnRoomCount = UnityEngine.Random.Range(1, 2+1); //Set Room Amount
+
+        Room rndRoom = RandomRoom();
         for (int i = 0; i < spawnRoomCount; i++)
         {
-            print("I like it:" + i.ToString());
+            
             if (i == 0) //First Room Pick Random Room
             {
                 if (hasKeyItem == true)
                 {
-                    room = CreateNextRoom(RandomRoom(), "KeyItem");  //Lock first Room with Key Item
+                    room = CreateNextRoom(rndRoom, "KeyItem");  //Lock first Room with Key Item
                 }
                 else
                 {
-                    room = CreateNextRoom(RandomRoom(), "none");  //Create an empty Room
+                    room = CreateNextRoom(rndRoom, "none");  //Create an empty Room
+                    room.keyLevel = rndRoom.keyLevel;
                 }
-                room.GetComponent<SpriteRenderer>().color = new Color(.7f, .7f, 0.7f);
             }
             else //All other Rooms
             {
                 room = CreateNextRoom(allRoomList[allRoomList.Count - 1], "noone");
-                room.GetComponent<SpriteRenderer>().color = new Color(.7f, .7f, 0.7f);
+                room.keyLevel = rndRoom.keyLevel;
+
             }
             if (i == spawnRoomCount-1) //Place the Key in Last Room
             {
-                //allRoomList[allRoomList.Count - 1].GetComponent<Room>().desciption = "Key";
-                //allRoomList[allRoomList.Count - 1].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 0.3f);
-
-                allRoomList[allRoomList.Count - 1].GetComponent<Room>().UpdateSymbol("key");
+               allRoomList[allRoomList.Count - 1].GetComponent<Room>().UpdateSymbol("key");
             }
 
+            
+
         }
+
+
+
         //INCREASE ROOM LEVEL
         roomLevel++;
 
@@ -231,17 +173,7 @@ public class NewGenerator : MonoBehaviour
         spawnRoomCount = UnityEngine.Random.Range(0, 1 + 1);  //Set how many rooms to Spawn
         for (int i = 0; i < spawnRoomCount; i++)  //Repeat for every Room
         {
-            if (nextRoomKeyLocked == true)
-            {
-                room = CreateNextRoom(LastMainBranchRoom(), "key");
-                nextRoomKeyLocked = false;
-            }
-            else
-            {
-                room = CreateNextRoom(LastMainBranchRoom(), "noone");
-            }
-
-            room.mainBranch = true;
+            CreateNextMainRoom();
         }
 
         
@@ -249,7 +181,24 @@ public class NewGenerator : MonoBehaviour
 
 
     }
-    private Room LastMainBranchRoom()
+    private Room CreateNextMainRoom()
+    {
+        Room NextMainRoom;
+        if (nextRoomKeyLocked == true)
+        {
+            NextMainRoom = CreateNextRoom(LastMainBranchRoom(), "key");
+            nextRoomKeyLocked = false;
+        }
+        else
+        {
+            NextMainRoom = CreateNextRoom(LastMainBranchRoom(), "noone");
+        }
+        NextMainRoom.mainBranch = true;
+        return NextMainRoom;
+    }
+
+
+    private Room LastMainBranchRoom() //Pick the Last Room from the Main Branch Room List, with free Edges
     {
         int counter = 0;
         do
@@ -260,7 +209,7 @@ public class NewGenerator : MonoBehaviour
         } while ((checkThisRoom.mainBranch == false));  //check if room is main and has free spaces
         return checkThisRoom;
     }
-    private Room RandomRoom()  //Pick a Room with Free Edges
+    private Room RandomRoom()  //Pick a random Room with Free Edges
     {
         bool foundRoom = false;
         while (foundRoom == false)
@@ -280,6 +229,10 @@ public class NewGenerator : MonoBehaviour
             
         }
         return allRoomList[randomRoom];
+    }
+    private Room LastRoomCreated() //Give Back Last Room was Created
+    {
+        return allRoomList[allRoomList.Count - 1];
     }
 
     // locked: noone, key, keyItem, monster, switch, bossKey, Bombs

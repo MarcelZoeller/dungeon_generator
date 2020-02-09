@@ -1,211 +1,202 @@
 fileFormatVersion: 2
-guid: 872481d18d8adcb4c94c25c7595d9546
+guid: e246eadc17788734994ed43ee2abe3f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8571809820867387182
-    second: dungeon_generator_symbols_0
+      213: 854736088671844643
+    second: symbols_0
   - first:
-      213: 3741370538230882731
-    second: dungeon_generator_symbols_1
+      213: 6534985902708556968
+    second: symbols_1
   - first:
-      213: -5706859450273114124
-    second: dungeon_generator_symbols_2
+      213: 1525073315414741256
+    second: symbols_2
   - first:
-      213: -4619759379519796871
-    second: dungeon_generator_symbols_3
+      213: -6888834326838547209
+    second: symbols_3
   - first:
-      213: -1425970726635707209
-    second: dungeon_generator_symbols_4
+      213: 2297057623441319471
+    second: symbols_4
   - first:
-      213: 923839206903644963
-    second: dungeon_generator_symbols_5
+      213: -2691767874220412688
+    second: symbols_5
   - first:
-      213: -2897491918137554586
-    second: dungeon_generator_symbols_6
+      213: 6623090950298105126
+    second: symbols_6
   - first:
-      213: 3887474111937363327
-    second: dungeon_generator_symbols_7
+      213: 3620135012093306134
+    second: symbols_7
   - first:
-      213: 3453978245384926840
-    second: dungeon_generator_symbols_8
+      213: 3582919057804498814
+    second: symbols_8
   - first:
-      213: 3636378589070965040
-    second: dungeon_generator_symbols_9
+      213: -8205508169387972997
+    second: symbols_9
   - first:
-      213: 7853013367509626063
-    second: dungeon_generator_symbols_10
+      213: -8430251170320930041
+    second: symbols_10
   - first:
-      213: 4745869711277699646
-    second: dungeon_generator_symbols_11
+      213: 9007670581715827407
+    second: symbols_11
   - first:
-      213: 5442069520775141291
-    second: dungeon_generator_symbols_12
+      213: -6223278300602712234
+    second: symbols_12
   - first:
-      213: -9008723875727281386
-    second: dungeon_generator_symbols_13
+      213: 7678402484200052906
+    second: symbols_13
   - first:
-      213: -2653356429701254441
-    second: dungeon_generator_symbols_14
+      213: 5785051122073723084
+    second: symbols_14
   - first:
-      213: -8013889446545267748
-    second: dungeon_generator_symbols_15
+      213: 6741638869084001161
+    second: symbols_15
   - first:
-      213: -5133841536404173550
-    second: dungeon_generator_symbols_16
+      213: -3555033286988310107
+    second: symbols_16
   - first:
-      213: -6795451258224946650
-    second: dungeon_generator_symbols_17
+      213: 2896803983068431957
+    second: symbols_17
   - first:
-      213: -3362002497176489342
-    second: dungeon_generator_symbols_18
+      213: 6375261501417793198
+    second: symbols_18
   - first:
-      213: -2912552690288369718
-    second: dungeon_generator_symbols_19
+      213: 7487676356887239673
+    second: symbols_19
   - first:
-      213: 7433272921233687918
-    second: dungeon_generator_symbols_20
+      213: -6980558405284613892
+    second: symbols_20
   - first:
-      213: -5025012007952230800
-    second: dungeon_generator_symbols_21
+      213: -3201009866945937374
+    second: symbols_21
   - first:
-      213: 8726064665767632146
-    second: dungeon_generator_symbols_22
+      213: 1012857840764364379
+    second: symbols_22
   - first:
-      213: -8172541651560632492
-    second: dungeon_generator_symbols_23
+      213: 8044934911511615772
+    second: symbols_23
   - first:
-      213: 3143426055176876613
-    second: dungeon_generator_symbols_24
+      213: 4967180802854691656
+    second: symbols_24
   - first:
-      213: -4230553455544041876
-    second: dungeon_generator_symbols_25
+      213: 5724766145763927620
+    second: symbols_25
   - first:
-      213: 4517337563055494666
-    second: dungeon_generator_symbols_26
+      213: 580228468978199257
+    second: symbols_26
   - first:
-      213: -3911802819479426045
-    second: dungeon_generator_symbols_27
+      213: -5503119966573976452
+    second: symbols_27
   - first:
-      213: 4388090019018594625
-    second: dungeon_generator_symbols_28
+      213: -1963575666879872664
+    second: symbols_28
   - first:
-      213: 6679259049991020503
-    second: dungeon_generator_symbols_29
+      213: 5091687008877163037
+    second: symbols_29
   - first:
-      213: 1113821933090237991
-    second: dungeon_generator_symbols_30
+      213: -7274089120588841010
+    second: symbols_30
   - first:
-      213: -2704573132965680419
-    second: dungeon_generator_symbols_31
+      213: 3946656046714827954
+    second: symbols_31
   - first:
-      213: -293160822194666045
-    second: dungeon_generator_symbols_32
+      213: -7354265540402214694
+    second: symbols_32
   - first:
-      213: 8175849828063236132
-    second: dungeon_generator_symbols_33
+      213: 3510422677891745594
+    second: symbols_33
   - first:
-      213: 290160712861877226
-    second: dungeon_generator_symbols_34
+      213: -4326295214117864676
+    second: symbols_34
   - first:
-      213: 5933122523879787995
-    second: dungeon_generator_symbols_35
+      213: 6648622698882507003
+    second: symbols_35
   - first:
-      213: -5573289366424513162
-    second: dungeon_generator_symbols_36
+      213: 4831243862686817038
+    second: symbols_36
   - first:
-      213: 8878362396982155275
-    second: dungeon_generator_symbols_37
+      213: -7050668344574258754
+    second: symbols_37
   - first:
-      213: -5284094233454397252
-    second: dungeon_generator_symbols_38
+      213: 8711030962387920433
+    second: symbols_38
   - first:
-      213: 4684160968386234023
-    second: dungeon_generator_symbols_39
+      213: -8229477418073917349
+    second: symbols_39
   - first:
-      213: -5116197435989276535
-    second: dungeon_generator_symbols_40
+      213: -6757441023176669763
+    second: symbols_40
   - first:
-      213: -8011322690582711273
-    second: dungeon_generator_symbols_41
+      213: 167375321728886944
+    second: symbols_41
   - first:
-      213: -2023753731854520948
-    second: dungeon_generator_symbols_42
+      213: 930687893664703484
+    second: symbols_42
   - first:
-      213: 8767121395527801098
-    second: dungeon_generator_symbols_43
+      213: -6677204968221580809
+    second: symbols_43
   - first:
-      213: -2249460406566765015
-    second: dungeon_generator_symbols_44
+      213: 5934608402689555759
+    second: symbols_44
   - first:
-      213: -8274168018152887104
-    second: dungeon_generator_symbols_45
+      213: 559181229550041695
+    second: symbols_45
   - first:
-      213: 1194849014790574780
-    second: dungeon_generator_symbols_46
+      213: 6135329328660304187
+    second: symbols_46
   - first:
-      213: 2475709234052638439
-    second: dungeon_generator_symbols_47
+      213: 399097334869692196
+    second: symbols_47
   - first:
-      213: -4937005597722742357
-    second: dungeon_generator_symbols_48
+      213: 8621606056705962740
+    second: symbols_48
   - first:
-      213: 4668708710007890759
-    second: dungeon_generator_symbols_49
+      213: -9148802662162471033
+    second: symbols_49
   - first:
-      213: 4346150995654685767
-    second: dungeon_generator_symbols_50
+      213: -2739972452944761054
+    second: symbols_50
   - first:
-      213: -5330585309652568388
-    second: dungeon_generator_symbols_51
+      213: 7848107551918949006
+    second: symbols_51
   - first:
-      213: -5974360956167833161
-    second: dungeon_generator_symbols_52
+      213: -58014003967075092
+    second: symbols_52
   - first:
-      213: 3750145760744100024
-    second: dungeon_generator_symbols_53
+      213: -8024864851624571810
+    second: symbols_53
   - first:
-      213: -6761367447131057681
-    second: dungeon_generator_symbols_54
+      213: -2302520362880777992
+    second: symbols_54
   - first:
-      213: 8544623562432433974
-    second: dungeon_generator_symbols_55
+      213: -398559882995088931
+    second: symbols_55
   - first:
-      213: 7955114530957649197
-    second: dungeon_generator_symbols_56
+      213: -5763909576472543405
+    second: symbols_56
   - first:
-      213: -6644616594684845783
-    second: dungeon_generator_symbols_57
+      213: -4473226388896731947
+    second: symbols_57
   - first:
-      213: -5688111877121455838
-    second: dungeon_generator_symbols_58
+      213: -614370611596259343
+    second: symbols_58
   - first:
-      213: -8494053366250909379
-    second: dungeon_generator_symbols_59
+      213: -6702681869278030969
+    second: symbols_59
   - first:
-      213: -8568965798924577021
-    second: dungeon_generator_symbols_60
+      213: 1914182749971065047
+    second: symbols_60
   - first:
-      213: 2819532975028508968
-    second: dungeon_generator_symbols_61
+      213: 6325443693658621552
+    second: symbols_61
   - first:
-      213: 8876953985032720644
-    second: dungeon_generator_symbols_62
+      213: -3372783465800781571
+    second: symbols_62
   - first:
-      213: -2475591055937089022
-    second: dungeon_generator_symbols_63
+      213: 4391706004831199766
+    second: symbols_63
   - first:
-      213: 7952821268333019168
-    second: dungeon_generator_symbols_64
-  - first:
-      213: 5716564943241037201
-    second: dungeon_generator_symbols_65
-  - first:
-      213: 6248128580601531700
-    second: dungeon_generator_symbols_66
-  - first:
-      213: -1020816719552429330
-    second: dungeon_generator_symbols_67
+      213: 5417336239132223390
+    second: symbols_64
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -249,7 +240,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -265,7 +256,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -277,7 +268,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -289,7 +280,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -302,1141 +293,1246 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dungeon_generator_symbols_0
+      name: symbols_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 144
+        x: 17
+        y: 107
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2a5c4f44cc981e4c9c0be10ead1a7ac
-      internalID: -8571809820867387182
+      spriteID: 9191442f34b547a45b6bed9d50e1358a
+      internalID: 854736088671844643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_1
+      name: symbols_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 144
+        x: 34
+        y: 107
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 486deedef5c40bb4db3db5245d0dc9b5
-      internalID: 3741370538230882731
+      spriteID: efa4595de650ecf4ca43a7dd06e25453
+      internalID: 6534985902708556968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_2
+      name: symbols_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
+        x: 51
+        y: 107
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 808b2da20b97a1f4b804153b46199eb7
-      internalID: -5706859450273114124
+      spriteID: baab4465f3efdd24aadc38ce4b9d1710
+      internalID: 1525073315414741256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_3
+      name: symbols_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
+        x: 68
+        y: 107
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25afbef15c55def41b2263946fdac6df
-      internalID: -4619759379519796871
+      spriteID: 5331d36f8badef749a6dd6ba5e725905
+      internalID: -6888834326838547209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_4
+      name: symbols_4
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
+        x: 85
+        y: 107
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc80c7526cacc7347b45867f945aece5
-      internalID: -1425970726635707209
+      spriteID: f6c8b291e89346541ba6ed9af4d4c12b
+      internalID: 2297057623441319471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_5
+      name: symbols_5
       rect:
         serializedVersion: 2
-        x: 96
-        y: 112
-        width: 48
-        height: 48
+        x: 102
+        y: 107
+        width: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0732075e04328d649be26a9100827993
-      internalID: 923839206903644963
+      spriteID: d4bca1f728569cd40a7df48773aa4abf
+      internalID: -2691767874220412688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_8
+      name: symbols_6
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 107
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534875e37b5938641a1cc80dd8bbda1c
+      internalID: 6623090950298105126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_7
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 107
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b48c3f0e7b137547862f439603b8aa8
+      internalID: 3620135012093306134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_8
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 107
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367d643bc2d0d764799ce971eb5d487f
+      internalID: 3582919057804498814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d744aa0551142f84f846e1d3574a1351
-      internalID: 3453978245384926840
+      spriteID: ee7fdd599067c4743978712b65ed5199
+      internalID: -8205508169387972997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_9
+      name: symbols_10
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 17
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4395794a96764094aab8913f7a817f7a
-      internalID: 3636378589070965040
+      spriteID: 8b04314f23553cd4fa10a868362e6395
+      internalID: -8430251170320930041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_10
+      name: symbols_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 34
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34424f1def8d1cd4b9f894b5bb2dd6cd
-      internalID: 7853013367509626063
+      spriteID: af412b62b10d311498b7e0a5e1fa6c4b
+      internalID: 9007670581715827407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_11
+      name: symbols_12
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
+        x: 51
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2362a728322b2174cb70c3c140991373
-      internalID: 4745869711277699646
+      spriteID: 3f6a162e2860a494cbbe706890d01727
+      internalID: -6223278300602712234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_12
+      name: symbols_13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 68
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e99e2e0f9beb1c41a510e2d9dead593
-      internalID: 5442069520775141291
+      spriteID: 3226f2dfa92c62f48b9418d0d19f27c7
+      internalID: 7678402484200052906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_13
+      name: symbols_14
       rect:
         serializedVersion: 2
-        x: 80
-        y: 128
+        x: 85
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75b522104fa1ff444854ff3151e0003a
-      internalID: -9008723875727281386
+      spriteID: 5750b5c20348ffc4bb2e8770bfd797ec
+      internalID: 5785051122073723084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_17
+      name: symbols_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
+        x: 102
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7af60c8a68f3e014bb313dbb3118af1c
-      internalID: -6795451258224946650
+      spriteID: 4a8426d7c3a58c54aa823ac6225a28ae
+      internalID: 6741638869084001161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_18
+      name: symbols_16
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 119
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5c98db2599bec04e8cb9e386e3f9792
-      internalID: -3362002497176489342
+      spriteID: 22933e97a129a9845b0925af01378446
+      internalID: -3555033286988310107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_19
+      name: symbols_17
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
+        x: 136
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 415a74a697905824ba9dcd974d148880
-      internalID: -2912552690288369718
+      spriteID: de8f5766b6cb7a541b7fd09ad7db1dfe
+      internalID: 2896803983068431957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_20
+      name: symbols_18
       rect:
         serializedVersion: 2
-        x: 48
-        y: 112
+        x: 153
+        y: 89
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b6af4a17eee8ba45b478adbc43873a0
-      internalID: 7433272921233687918
+      spriteID: 916387736dd896441ba03ba012878ca2
+      internalID: 6375261501417793198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_21
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 255bc7bbb15d0924a91671de544beacd
-      internalID: -5025012007952230800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dungeon_generator_symbols_22
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6ac7aa221030ac4b8fa50176c71c869
-      internalID: 8726064665767632146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dungeon_generator_symbols_26
+      name: symbols_19
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f067609494777440adae85c377c668c
-      internalID: 4517337563055494666
+      spriteID: 3616786103e3a24499288b01387055e3
+      internalID: 7487676356887239673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_27
+      name: symbols_20
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 17
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 978322234a0a918448cad15f485e4bd6
-      internalID: -3911802819479426045
+      spriteID: ad917082b43db6e449b190670260d2a9
+      internalID: -6980558405284613892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_28
+      name: symbols_21
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 34
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8829c81bea42b3e498e0e351c268c25a
-      internalID: 4388090019018594625
+      spriteID: 742bb43d64aa5f04f9d8d09a540dc1ee
+      internalID: -3201009866945937374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_29
+      name: symbols_22
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
+        x: 51
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83c91dec5ca73dd408b5a5dec40dc72b
-      internalID: 6679259049991020503
+      spriteID: d38bf538c332d784091972a039a97af5
+      internalID: 1012857840764364379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_30
+      name: symbols_23
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 68
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96b25dfd9b2d9f84995ec53a1d6cb60f
-      internalID: 1113821933090237991
+      spriteID: 6218467b045078142b8e652059aae5a9
+      internalID: 8044934911511615772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_31
+      name: symbols_24
       rect:
         serializedVersion: 2
-        x: 80
-        y: 96
+        x: 85
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6493422aa1a3f23429f0fe5179937078
-      internalID: -2704573132965680419
+      spriteID: cbecea1fa697a4a419cbd786e6ee5564
+      internalID: 4967180802854691656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_32
+      name: symbols_25
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
+        x: 102
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4e1dccf5d6de544e9b48d22c4997338
-      internalID: -293160822194666045
+      spriteID: fcf1696ebd659af48b1b2d19f1e49902
+      internalID: 5724766145763927620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_33
+      name: symbols_26
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
+        x: 119
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 024e8fd7a4e00f3459ec1dda9e556d7c
-      internalID: 8175849828063236132
+      spriteID: 25d73b314a0d29d438fdc93b28187031
+      internalID: 580228468978199257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_34
+      name: symbols_27
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
+        x: 136
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46608f38bdb92374da84df761aa97dbc
-      internalID: 290160712861877226
+      spriteID: 53e35c7dbeb42bb4089607395644407c
+      internalID: -5503119966573976452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_35
+      name: symbols_28
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
+        x: 153
+        y: 71
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7b8a6f77abfd7142b8346b13091d2b2
-      internalID: 5933122523879787995
+      spriteID: 487b2f128a5218e4d99f031cb3cd9c6b
+      internalID: -1963575666879872664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_36
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 435c5a8904e17a84abdd520687ee2124
-      internalID: -5573289366424513162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dungeon_generator_symbols_37
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdf99eb57a61b214c8ae4a1e16ae4f98
-      internalID: 8878362396982155275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dungeon_generator_symbols_38
+      name: symbols_29
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e0c62ca4962a8f449dc8bd263911263
-      internalID: -5284094233454397252
+      spriteID: e3660aac61e036845a7af1f7a7e97db2
+      internalID: 5091687008877163037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_39
+      name: symbols_30
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 17
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59961d515a25f5048ac2bfa22a4b501b
-      internalID: 4684160968386234023
+      spriteID: a80f9227131f92447b5ab4f70295f28a
+      internalID: -7274089120588841010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_40
+      name: symbols_31
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 34
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cfaf2bc0a4cd0a418b67fe6dab31e83
-      internalID: -5116197435989276535
+      spriteID: b01c0fd0e824648458bcbc7263bca766
+      internalID: 3946656046714827954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_41
+      name: symbols_32
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 51
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef9770fd99bda2d49acd4473037d45cd
-      internalID: -8011322690582711273
+      spriteID: 45baad5ab4912584d967e7c3d7e5fdaa
+      internalID: -7354265540402214694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_42
+      name: symbols_33
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 68
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16c04c3d3ada5a544beaef837c764bd6
-      internalID: -2023753731854520948
+      spriteID: 5f0c5a5974525094db36751bb4ddfaaa
+      internalID: 3510422677891745594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_43
+      name: symbols_34
       rect:
         serializedVersion: 2
-        x: 80
-        y: 64
+        x: 85
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e422273ee4a98148baaa763cf155f87
-      internalID: 8767121395527801098
+      spriteID: 02bcfd08d7feffe4d9622cc0cb4ab8f6
+      internalID: -4326295214117864676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_44
+      name: symbols_35
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 102
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ffc25dc73fb7064ab12dae231631efd
-      internalID: -2249460406566765015
+      spriteID: 0551fe20df728744e898bf0e6941bbea
+      internalID: 6648622698882507003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_45
+      name: symbols_36
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 119
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cacadcb6259e26648936fb76a144d8dc
-      internalID: -8274168018152887104
+      spriteID: 42722c99299421d4c9e0dcd3d0554c00
+      internalID: 4831243862686817038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_46
+      name: symbols_37
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 136
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58172c930250fe44dbae117edaf7a6c4
-      internalID: 1194849014790574780
+      spriteID: 89855387d95ef454cae340210fedae92
+      internalID: -7050668344574258754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_47
+      name: symbols_38
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 153
+        y: 53
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f064a0797ca62954487e72ac197e02f7
-      internalID: 2475709234052638439
+      spriteID: 7b656e84a2cf9c94f9581286d2408c97
+      internalID: 8711030962387920433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_48
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66aff38093955b24a921fd4004b648df
-      internalID: -4937005597722742357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dungeon_generator_symbols_49
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae03c534f59d8f44283e9d0c06476648
-      internalID: 4668708710007890759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dungeon_generator_symbols_50
+      name: symbols_39
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 35
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18577345f46859046a9ae8395b77cfd0
-      internalID: 4346150995654685767
+      spriteID: 9f291aa83fefb56498c53bc351e60671
+      internalID: -8229477418073917349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_51
+      name: symbols_40
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 17
+        y: 35
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bedac9b4ff0b11946af58f3efbb80649
-      internalID: -5330585309652568388
+      spriteID: 514ec860f4077ef4398a7e4a0139541b
+      internalID: -6757441023176669763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_52
+      name: symbols_41
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 34
+        y: 35
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 506cb8b91f7b3e64bb088b83afbb15f9
-      internalID: -5974360956167833161
+      spriteID: 5c4063ae6c319ce4a8d68ee4eb703b80
+      internalID: 167375321728886944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_53
+      name: symbols_42
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 51
+        y: 35
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9921267198f55fa42a492c27e05c87d3
-      internalID: 3750145760744100024
+      spriteID: 55e9f312793868c4a9a43a2bdb3a3e46
+      internalID: 930687893664703484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_54
+      name: symbols_43
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 68
+        y: 35
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 185d1d2f8f385a94f91f4ffc8c5135b0
-      internalID: -6761367447131057681
+      spriteID: 20cb837fececfde419c68907cf798d18
+      internalID: -6677204968221580809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_55
+      name: symbols_44
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
+        x: 85
+        y: 35
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92f8aec6cfbca4948987e34d0d1720e5
-      internalID: 8544623562432433974
+      spriteID: 5a713a5153d06384aa56a1fb81c974fd
+      internalID: 5934608402689555759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_56
+      name: symbols_45
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 35
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17332b315d3aec647a68061ec29abf98
+      internalID: 559181229550041695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_46
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 35
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbae5b1e53a5df4bbf0a7678c15a79a
+      internalID: 6135329328660304187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_47
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 35
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18edf74c348b0c429d9ba178d72f2b5
+      internalID: 399097334869692196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_48
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 35
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d237d02dcde03c1409571b15f7decb07
+      internalID: 8621606056705962740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_49
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 17
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d9107aba6a089e45979dc1b1579969a
-      internalID: 7955114530957649197
+      spriteID: f22ecc34a0219914fa1be69e3b06225d
+      internalID: -9148802662162471033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_57
+      name: symbols_50
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 17
+        y: 17
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f8c4bca317c6724bb0f3b6876c83b1c
-      internalID: -6644616594684845783
+      spriteID: 7c517fd4e6769514ab76a058e9cbaf0b
+      internalID: -2739972452944761054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_58
+      name: symbols_51
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 34
+        y: 17
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc2c06f3b74f65b4687b40a01a0fd417
-      internalID: -5688111877121455838
+      spriteID: e646aab0625d7ec46b02e496cf6f33e3
+      internalID: 7848107551918949006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_59
+      name: symbols_52
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 51
+        y: 17
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64255ff1aa75db64b9e5c02340025bab
-      internalID: -8494053366250909379
+      spriteID: 71a1bc5af5f439b46a7a1cd41f2b3a38
+      internalID: -58014003967075092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_60
+      name: symbols_53
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
+        x: 68
+        y: 17
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afc13f1b63aeab34ca83e36065440751
-      internalID: -8568965798924577021
+      spriteID: f834542e6ec9d224fa4ab597303e3154
+      internalID: -8024864851624571810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_61
+      name: symbols_54
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
+        x: 85
+        y: 17
         width: 16
-        height: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cc51cb06958c114899f8345724ad829
-      internalID: 2819532975028508968
+      spriteID: d5a5b212005a7d440a08eadddd28c124
+      internalID: -2302520362880777992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_62
+      name: symbols_55
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 17
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd0f78a664f50a4296900d9486e6d72
+      internalID: -398559882995088931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_56
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 17
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c657c0d8829fd47aedad99983e24e5
+      internalID: -5763909576472543405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_57
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 17
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46f78b5313e5f244ba4a699ada04384
+      internalID: -4473226388896731947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_58
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 17
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0230758bc6197eb4189f563feabf3910
+      internalID: -614370611596259343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbols_59
       rect:
         serializedVersion: 2
         x: 0
@@ -1444,119 +1540,119 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef27f0084559f5f49bc6b807ceb75b38
-      internalID: 8876953985032720644
+      spriteID: 9702da15b4f3d7e4ab256291146ae6e8
+      internalID: -6702681869278030969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_63
+      name: symbols_60
       rect:
         serializedVersion: 2
-        x: 16
+        x: 17
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14d0b240d50b2d84284f2288e3c27a36
-      internalID: -2475591055937089022
+      spriteID: 7d90d5116b131c842bddd088441af281
+      internalID: 1914182749971065047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_64
+      name: symbols_61
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b1f9298527872c46ac44f48ec0f7334
-      internalID: 7952821268333019168
+      spriteID: dfe0810c1bf97d4459199ef6802c25dd
+      internalID: 6325443693658621552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_65
+      name: symbols_62
       rect:
         serializedVersion: 2
-        x: 48
+        x: 51
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7ca9df2b0af3f2439403e5140659873
-      internalID: 5716564943241037201
+      spriteID: 15842228b6e653a4bb091bdd2f119927
+      internalID: -3372783465800781571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_66
+      name: symbols_63
       rect:
         serializedVersion: 2
-        x: 64
+        x: 68
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8acc88e82bc56824da17c7516084c50d
-      internalID: 6248128580601531700
+      spriteID: 647f8b1a849e88b419384885baea2492
+      internalID: 4391706004831199766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_generator_symbols_67
+      name: symbols_64
       rect:
         serializedVersion: 2
-        x: 80
+        x: 85
         y: 0
-        width: 16
-        height: 16
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ca6fe97e0c65fd4aad4ea73a2b6baab
-      internalID: -1020816719552429330
+      spriteID: 92611f85d7cb81f44bc97e70acf0b061
+      internalID: 5417336239132223390
       vertices: []
       indices: 
       edges: []
