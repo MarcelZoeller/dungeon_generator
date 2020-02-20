@@ -17,7 +17,7 @@ public class NewGenerator : MonoBehaviour
     Room room;
     int randomRoom;
     bool hasKeyItem = false;
-    bool nextRoomKeyLocked = false;
+    bool nextMainBranchRoomKeyLocked = false;
     bool bossRoomBeforeKey = false;
 
     Room checkThisRoom;
@@ -39,13 +39,12 @@ public class NewGenerator : MonoBehaviour
         PlaceStartRoom();
         ExpandMainBranch();
         PlaceMiniBossRoom();
+        
         ExpandMainBranch();
         PlaceKeyItemRoom();
         ExpandMainBranch();
-        ExpandMainBranch();
+        //ExpandMainBranch();
         PlaceBossRoom();
-        //Add Bonus Rooms (locked with Keys, with a Key)
-
 
     }
     private void PlaceStartRoom()
@@ -54,38 +53,63 @@ public class NewGenerator : MonoBehaviour
         room.GetComponent<Room>().UpdateIcon("entrance");
         room.mainBranch = true;
         allRoomList.Add(room.GetComponent<Room>());
+
+        CreateEmptyMainBranchRooms(1, 2);
+        nextMainBranchRoomKeyLocked = true;
+        CreateSubBranchRooms(1, 2);
+        roomLevel++;
     }
+
     private void PlaceMiniBossRoom()
     {
+        CreateEmptyMainBranchRooms(0, 1);
+
         room = CreateNextMainRoom();
         room.GetComponent<Room>().UpdateIcon("miniBoss");
         room.mainBranch = true;
+
+        CreateEmptyMainBranchRooms(1, 2);
+        nextMainBranchRoomKeyLocked = true;
+        CreateSubBranchRooms(1, 2);
+        roomLevel++;
+
     }
+
     private void PlaceKeyItemRoom()
     {
+        CreateEmptyMainBranchRooms(0, 1);
+
         room = CreateNextMainRoom();
         room.GetComponent<Room>().UpdateSymbol("keyItem");
-        //roomLevel++;
         hasKeyItem = true;
-        //int keyItemKeyLevel = keyItemKeyLevel; 
+
+        CreateEmptyMainBranchRooms(1, 2);
+        nextMainBranchRoomKeyLocked = true;
+        roomLevel++;
+        CreateSubBranchRooms(1, 2);
+        roomLevel++;
+        
+
     }
+
     private void PlaceBossRoom()
     {
         // Randomly decide if place Boss Key or Boss Room first
         if (UnityEngine.Random.Range(0, 100) >= 50)
         {
-            //Create BossKey Room   
+            //Create Boss Room first
+            roomLevel++;
             room = CreateNextRoom(LastMainBranchRoom(), "BossKey"); //Lock with BossKey 
             room.GetComponent<Room>().UpdateIcon("boss");
+            roomLevel--;
 
-            roomLevel++;
 
 
             //Create BossKey Room
-            if (nextRoomKeyLocked == true)
+            if (nextMainBranchRoomKeyLocked == true)
             {
                 room = CreateNextRoom(LastMainBranchRoom(), "key");
-                nextRoomKeyLocked = false;
+                nextMainBranchRoomKeyLocked = false;
             }
             else
             {
@@ -96,8 +120,17 @@ public class NewGenerator : MonoBehaviour
 
         }
         else
-        {   //Create BossKey Room befor Boss            
-            room = CreateNextMainRoom();
+        {   //Create BossKey Room first           
+            if (nextMainBranchRoomKeyLocked == true)
+            {
+                room = CreateNextRoom(LastMainBranchRoom(), "key");
+                nextMainBranchRoomKeyLocked = false;
+            }
+            else
+            {
+                room = CreateNextRoom(allRoomList[randomRoom], "KeyItem");
+            }
+            //room = CreateNextMainRoom();
             room.GetComponent<Room>().UpdateSymbol("bossKey");
 
             roomLevel++;
@@ -107,31 +140,34 @@ public class NewGenerator : MonoBehaviour
             room.GetComponent<Room>().UpdateIcon("boss");
         }
         
-        
-
-
-        
-
     }
+
     private void ExpandMainBranch()
     {
+        CreateEmptyMainBranchRooms(1, 3);
+        nextMainBranchRoomKeyLocked = true;
+        CreateSubBranchRooms(1, 2);
+        roomLevel++;
+    }
 
-        // GENERATE ROOMS BEFORE LOCKED ROOM
-        int spawnRoomCount = UnityEngine.Random.Range(1, 2+1);  //Set how many rooms to Spawn
-        for (int i = 0; i < spawnRoomCount; i++)  //Repeat for every Room
+    private void CreateSubBranchRooms(int minRooms, int maxRooms)
+    {
+        // PLACE (Hide) THE KEY 
+        int spawnRoomCount = UnityEngine.Random.Range(minRooms, maxRooms + 1); //Set Room Amount
+
+        Room rndRoom;
+        if (UnityEngine.Random.Range(0, 100) >= 50)
         {
-            CreateNextMainRoom();
+            rndRoom = RandomRoom();
+        }
+        else
+        {
+            rndRoom = LastMainBranchRoom();
         }
 
-        nextRoomKeyLocked = true;
-        
+            
+        print(rndRoom.keyLevel);
 
-
-
-        // PLACE (Hide) THE KEY 
-        spawnRoomCount = UnityEngine.Random.Range(1, 2+1); //Set Room Amount
-
-        Room rndRoom = RandomRoom();
         for (int i = 0; i < spawnRoomCount; i++)
         {
             
@@ -147,47 +183,45 @@ public class NewGenerator : MonoBehaviour
                     room.keyLevel = rndRoom.keyLevel;
                 }
             }
-            else //All other Rooms
+            else //All other Rooms 2+
             {
                 room = CreateNextRoom(allRoomList[allRoomList.Count - 1], "noone");
-                room.keyLevel = rndRoom.keyLevel;
+                
+                if (!hasKeyItem)
+                {
+                    room.keyLevel = rndRoom.keyLevel;
+                }
+                    
+
 
             }
-            if (i == spawnRoomCount-1) //Place the Key in Last Room
+            if (i == spawnRoomCount - 1) //Place the Key in Last Room
             {
-               allRoomList[allRoomList.Count - 1].GetComponent<Room>().UpdateSymbol("key");
+                allRoomList[allRoomList.Count - 1].GetComponent<Room>().UpdateSymbol("key");
             }
 
-            
+
 
         }
+    }
 
-
-
-        //INCREASE ROOM LEVEL
-        roomLevel++;
-
-
-
+    private void CreateEmptyMainBranchRooms(int minRooms, int maxRooms)
+    {
         // GENERATE ROOMS BEFORE LOCKED ROOM
-        spawnRoomCount = UnityEngine.Random.Range(0, 1 + 1);  //Set how many rooms to Spawn
+        int spawnRoomCount = UnityEngine.Random.Range(minRooms, maxRooms + 1);  //Set how many rooms to Spawn
         for (int i = 0; i < spawnRoomCount; i++)  //Repeat for every Room
         {
             CreateNextMainRoom();
         }
-
-        
-
-
-
     }
+
     private Room CreateNextMainRoom()
     {
         Room NextMainRoom;
-        if (nextRoomKeyLocked == true)
+        if (nextMainBranchRoomKeyLocked == true)
         {
             NextMainRoom = CreateNextRoom(LastMainBranchRoom(), "key");
-            nextRoomKeyLocked = false;
+            nextMainBranchRoomKeyLocked = false;
         }
         else
         {
@@ -196,8 +230,6 @@ public class NewGenerator : MonoBehaviour
         NextMainRoom.mainBranch = true;
         return NextMainRoom;
     }
-
-
     private Room LastMainBranchRoom() //Pick the Last Room from the Main Branch Room List, with free Edges
     {
         int counter = 0;
