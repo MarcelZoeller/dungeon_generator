@@ -156,7 +156,7 @@ public class NewGenerator : MonoBehaviour
         int spawnRoomCount = UnityEngine.Random.Range(minRooms, maxRooms + 1); //Set Room Amount
 
         Room rndRoom;
-        if (UnityEngine.Random.Range(0, 100) >= 50)
+        if (UnityEngine.Random.Range(0, 100) >= 80)
         {
             rndRoom = RandomRoom();
         }
@@ -204,6 +204,8 @@ public class NewGenerator : MonoBehaviour
 
         }
     }
+
+  
 
     private void CreateEmptyMainBranchRooms(int minRooms, int maxRooms)
     {
