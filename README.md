@@ -1,4 +1,4 @@
-# dungeon_generator
+# Dungeon Generator
 
 Here is a very simplified description of how it works.
 
